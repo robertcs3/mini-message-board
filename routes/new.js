@@ -1,9 +1,11 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.send("IT'S THE NEW PAGE")
+    res.render('form',{title: 'form',})
 });
+
 
 module.exports = router;
